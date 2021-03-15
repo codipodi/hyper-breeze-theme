@@ -6,6 +6,10 @@ $tab-bg-inactive-hover: #3e4146;
   background-color: $tab-bg-inactive;
 }
 
+:global(body.closed-tabs) .header_header {
+  background-color: $tab-bg;
+}
+
 .header_windowHeaderWithBorder {
   border-bottom-style: none;
 }
