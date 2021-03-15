@@ -27,5 +27,6 @@ export function decorateConfig(
     backgroundColor,
     foregroundColor,
     colors,
+    css: (config.css || "") + styles,
   })
 }

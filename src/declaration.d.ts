@@ -1,3 +1,9 @@
+// https://stackoverflow.com/a/41946697
+declare module "*.scss" {
+  const content: Record<string, string>
+  export default content
+}
+
 // https://github.com/vercel/hyper/blob/ffd4eb46e3923061be6549796f00d437fa0aaa0f/lib/config.d.ts
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 namespace Hyper {

@@ -10,6 +10,10 @@ const config: webpack.Configuration = {
         use: "ts-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.s[ac]ss$/,
+        use: ["css-loader", "sass-loader"],
+      },
     ],
   },
   output: {
