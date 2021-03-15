@@ -2,6 +2,7 @@ import styles from "./styles.scss"
 
 const backgroundColor = "#31363b"
 const foregroundColor = "#eff0f1"
+const borderColor = "#4f5256"
 
 const colors: Hyper.Options.Color = {
   black: backgroundColor,
@@ -28,6 +29,7 @@ export function decorateConfig(
   return Object.assign({}, config, <Hyper.Options.Config>{
     backgroundColor,
     foregroundColor,
+    borderColor,
     colors,
     css: (config.css || "") + styles,
   })
