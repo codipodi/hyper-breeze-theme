@@ -3,7 +3,7 @@
   "description": "Porting of KDE Breeze theme for Hyper",
   "author": "codipodi",
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "homepage": "https://github.com/codipodi/hyper-breeze-theme#readme",
   "repository": {
     "type": "git",
@@ -23,8 +23,7 @@
     "breeze"
   ],
   "scripts": {
-    "postinstall": "husky install",
-    "prepare": "webpack"
+    "prepare": "husky install && webpack"
   },
   "main": "dist/main.js",
   "devDependencies": {
