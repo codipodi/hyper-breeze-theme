@@ -1,3 +1,5 @@
+import styles from "./styles.scss"
+
 const backgroundColor = "#31363b"
 const foregroundColor = "#eff0f1"
 
