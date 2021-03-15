@@ -12,6 +12,9 @@ const config: webpack.Configuration = {
       },
     ],
   },
+  output: {
+    libraryTarget: "commonjs",
+  },
   resolve: {
     extensions: [".js", ".ts"],
   },
