@@ -7,7 +7,7 @@ $tab-bg-inactive-hover: #3e4146;
 }
 
 :global(body.closed-tabs) .header_header {
-  background-color: $tab-bg;
+  background-color: $tab-bg !important;
 }
 
 .header_windowHeaderWithBorder {

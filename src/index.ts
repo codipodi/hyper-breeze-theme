@@ -3,7 +3,7 @@ import styles from "./styles.scss"
 const backgroundColor = "#31363b"
 const foregroundColor = "#eff0f1"
 
-const colors: Hyper.ColorOptions = {
+const colors: Hyper.Options.Color = {
   black: backgroundColor,
   red: "#ed1515",
   green: "#11d116",
@@ -23,12 +23,27 @@ const colors: Hyper.ColorOptions = {
 }
 
 export function decorateConfig(
-  config: Hyper.ConfigOptions
-): Hyper.ConfigOptions {
-  return Object.assign({}, config, <Hyper.ConfigOptions>{
+  config: Hyper.Options.Config
+): Hyper.Options.Config {
+  return Object.assign({}, config, <Hyper.Options.Config>{
     backgroundColor,
     foregroundColor,
     colors,
     css: (config.css || "") + styles,
   })
+}
+
+export function getTabsProps(
+  parentProps: unknown,
+  props: Hyper.TabsProps
+): Record<string, unknown> {
+  const bodyClasses = document.body.classList
+
+  if (props.tabs.length <= 1) {
+    bodyClasses.add("closed-tabs")
+  } else {
+    bodyClasses.remove("closed-tabs")
+  }
+
+  return Object.assign({}, parentProps, props)
 }
