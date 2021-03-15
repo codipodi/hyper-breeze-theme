@@ -2,6 +2,10 @@ $tab-bg: #31363b;
 $tab-bg-inactive: #232627;
 $tab-bg-inactive-hover: #3e4146;
 
+.header_header {
+  background-color: $tab-bg-inactive;
+}
+
 .tab_tab {
   background-color: $tab-bg-inactive;
 }
