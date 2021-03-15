@@ -1,5 +1,5 @@
-const backgroundColor = "#232627"
-const foregroundColor = "#fcfcfc"
+const backgroundColor = "#31363b"
+const foregroundColor = "#eff0f1"
 
 const colors: Hyper.ColorOptions = {
   black: backgroundColor,
