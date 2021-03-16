@@ -31,6 +31,8 @@ export function decorateConfig(
     foregroundColor,
     borderColor,
     colors,
+    cursorColor: foregroundColor,
+    cursorAccentColor: foregroundColor,
     css: (config.css || "") + styles,
   })
 }
